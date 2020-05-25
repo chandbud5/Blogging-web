@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Blog Post - Reinforcement Learning</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container"><a class="navbar-brand" href="index.html">Technical Blogger</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div
+                class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="about.html">About ME</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="contact.html">Contact ME</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <header class="masthead" style="background-image: url(&quot;assets/img/alex-knight-2EJCSULRwC8-unsplash.jpg&quot;);">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto">
+                    <div class="post-heading">
+                        <h1>Reinforcement Learning - An Introduction</h1>
+                        <h2 class="subheading">Let's help machines to understand how we think and Learn</h2><span class="meta">Posted by&nbsp;<a href="#">Chand Bud</a>&nbsp;on May 22, 2020</span></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <p class="text-center" style="margin-top: -70px;font-size: 17px;"><br>Photo by <span style="text-decoration: underline;">Alex Knight</span>&nbsp;on&nbsp;<a href="https://unsplash.com/@agkdesign" target="_blank">Unsplash</a><br><br></p>
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto">
+                    <blockquote class="blockquote">
+                        <p class="mb-0">“Success in creating AI would be the biggest event in human history. Unfortunately, it might also be the last, unless we learn how to avoid the risks.” — Stephen Hawking<br></p>
+                    </blockquote>
+                    <p>Today everybody is taking about Artificial Intelligence(AI) and everyone wants to get into this field and work on some amazing ideas they have. But people are not completely aware of what's happening and how it's happening. So in this
+                        blog we will try to demistify AI and give basic introduction to Reinfocement Learning which is an category of Machine Learning.</p>
+                    <p>Now, moving on to machine learning which is a subset of AI. Machine learning is the field of study that gives the computers an ability to learn without being explicitly programmed.<br></p>
+                    <h2 class="section-heading">Moving towards Reinforcement Learning</h2>
+                    <p>The idea of reinforcement learning is inspired by an idea about how the human brain works. So there are a lot of analogies between them. Reinforcement learning (RL) is trial and error based method in which an agent will perform actions
+                        based on policies and value function and it will get rewards for performing an action. The reward will decide whether the action performed was a good move or a bad one. The only objective of an agent is to maximize the reward.<br></p>
+                    <h2
+                        class="section-heading">Terminologies</h2>
+                        <ul>
+                            <li><strong>Agent -&nbsp;</strong>The learner which needs to make decisions and take actions.<br></li>
+                            <li><strong>Environment -&nbsp;</strong>It is an interactive place to an agent where it can learn.<br></li>
+                            <li><strong>Actions -&nbsp;</strong>The particular operation performed by an Agent.<br></li>
+                            <li><strong>Reward -&nbsp;</strong>The signal given by an environment to an agent for performing any particular action.<br></li>
+                            <li><strong>State -&nbsp;</strong>The state of an agent at a particular moment in an environment.<br></li>
+                        </ul>
+                        <h2 class="section-heading">Elements of Reinforcement Learning</h2>
+                        <ul>
+                            <li>Policy</li>
+                            <li>Reward Signal</li>
+                            <li>Value Function</li>
+                            <li>Model (optional)</li>
+                        </ul>
+                        <h2 class="section-heading" style="font-size: 27px;">Policy -&nbsp;</h2>
+                        <ul>
+                            <li>It defines the mapping between the state of the environment to actions to be taken whenever the agent is in those states.<br></li>
+                            <li>The policy is a core of a reinforcement learning agent in the sense that it is alone sufficient to determine the behaviour&nbsp;of the agent.<br></li>
+                            <li>It corresponds to what in psychology is termed as stimulus-response rules or association.<br></li>
+                        </ul>
+                        <h2 class="section-heading" style="font-size: 27px;">Reward Signal -&nbsp;</h2>
+                        <ul>
+                            <li>The environment will send a reward signal to an agent in the response of performing an action.<br></li>
+                            <li>The agent will consider an action to be good if the reward is high else it is a bad one.<br></li>
+                            <li>The reward signal is the primary basis for changing policy as, if an action chosen by policy gets low reward then the policy may get changed to select another action in future in the same situation.<br></li>
+                            <li>In the human brain, we might think of the reward signal as an analogy to the experience of pleasure or pain.<br></li>
+                        </ul>
+                        <h2 class="section-heading" style="font-size: 27px;">Value Function -&nbsp;</h2>
+                        <ul>
+                            <li>The reward signal indicate what is good in an immediate sense while the value function specifies what is good in the long run.<br></li>
+                            <li>The value of a state is the total amount of reward an agent can expect to accumulate over the future, starting from that point.<br></li>
+                            <li>The most important feature of an RL algorithm is to efficiently estimate the values, so that agent can get maximum reward.<br></li>
+                        </ul>
+                        <h2 class="section-heading" style="font-size: 27px;">Model -&nbsp;</h2>
+                        <ul>
+                            <li>It is the model of the environment.<br></li>
+                            <li>It mimics the behaviour of the environment.<br></li>
+                            <li>Model can help to make inferences about how an environment will behave.<br></li>
+                        </ul>
+                        <h2 class="section-heading">Challenges of Reinforcement Learning</h2>
+                        <p><em>The most important challenge is the trade-off between Exploration and Exploitation.</em><br></p>
+                        <ul>
+                            <li><strong>Exploitation -&nbsp;</strong>The agent has to exploit it's knowledge which it has gained from it's past experience, in-order&nbsp;to get maximum reward for a particular action.<br></li>
+                            <li><strong>Exploration -&nbsp;</strong>The agent needs to explore various actions to make better action selection in future and accumulate more reward in long run. So, it has to try variety of action.<br></li>
+                        </ul>
+                        <p>The problem is that we can not do any of them excessively. So there has to be trade-off between them.<br></p>
+                        <h2 class="section-heading">Applications of Reinforcement Learning</h2>
+                        <p>One of the major application is Autonomous Cars. Many companies are focused on building them. They work on the principle of Reinforcement Learning.<br></p>
+                </div>
+            </div>
+        </div>
+    </article>
+    <div class="footer-basic">
+        <footer>
+            <div class="social" style="font-size: 20px;"><a href="https://github.com/chandbud5" target="_blank"><i class="fa fa-github"></i></a><a target="_blank" href="https://www.linkedin.com/in/chandbud5/"><i class="fa fa-linkedin-square"></i></a><a href="https://www.instagram.com/chandbud5/"
+                    target="_blank"><i class="fa fa-instagram" style="font-size: 24px;"></i></a></div>
+            <p class="copyright" style="font-size: 16px;margin-bottom: -50px;">Technical Blogger © 2020</p>
+        </footer>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="assets/js/clean-blog.js"></script>
+</body>
+
+</html>
