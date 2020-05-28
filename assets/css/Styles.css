@@ -1,0 +1,30 @@
+.img-fluid.mb-5 {
+  margin-top: -25px;
+  margin-bottom: -30px;
+}
+
+.mb-5, .my-5 {
+  font-size: 19px;
+  color: rgb(0,0,0);
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+
+.btn:not(:disabled):not(.disabled) {
+  margin: Auto;
+  margin-bottom: 5px;
+}
+
+.btn:not(:disabled):not(.disabled) {
+  font-size: 18px;
+}
+
+.ico {
+  font-size: 25px;
+  color: white;
+}
+
+.txt {
+  color: white;
+}
+
