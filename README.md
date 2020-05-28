@@ -1,3 +1,3 @@
 # portfolio
 
-### Visit my portfolio at 👉👉 [CLICK HERE](https://chandbud.me/)
+### Visit my Blogs at 👉👉 [CLICK HERE](https://chandbud.me/)
