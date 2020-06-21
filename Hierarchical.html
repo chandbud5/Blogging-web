@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Blog Post - Technical Blogger</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="assets/css/Styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container"><a class="navbar-brand" href="index.html">DataScience Blogs</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div
+                class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="Projects.html">Projects</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="about.html">About ME</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="contact.html">Contact ME</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <header class="masthead" style="background-image: url(&quot;assets/img/clusters.png&quot;);">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto">
+                    <div class="post-heading">
+                        <h1>Hierarchical Clustering - An Unsupervised Learning Algorithm</h1>
+                        <h2 class="subheading">Forming different clusters of our data points.</h2><span class="meta">Posted by&nbsp;<a href="about.html">Chand Bud</a>&nbsp;on June 20, 2020</span></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto">
+                    <blockquote class="blockquote">
+                        <p class="mb-0">Artificial Intelligence is the new Electricity. -Andrew Ng</p>
+                    </blockquote>
+                    <h2 class="section-heading">Introduction</h2>
+                    <p><strong>Unsupervised learning</strong>&nbsp;is a type of Machine learning in which we use unlabeled data and we try to find a pattern among the data.<br></p>
+                    <p><strong>Clustering algorithms</strong>&nbsp;falls under the category of unsupervised learning. In these algorithms, we try to make different clusters among the data.<br></p>
+                    <p><strong>Hierarchical Clustering</strong>&nbsp;algorithms build a hierarchy of clusters where each node is a cluster consisting of the clusters of its children node.<br></p>
+                    <p>There are various strategies in Hierarchical Clustering such as :<br></p>
+                    <ul>
+                        <li>Agglomerative</li>
+                        <li>Divisive</li>
+                    </ul>
+                    <p>This type of diagram is called&nbsp;<em>Dendrogram.</em><br></p><img class="img-fluid" src="assets/img/Screenshot%20(6).png">
+                    <p><strong>Divisive </strong>- It is a Top-down approach. So we start with all observations in a large cluster and break it down into smaller ones.<br></p>
+                    <p><strong>Agglomerative </strong>- It is the opposite of Divisive as it is a Bottom-Up approach. Here, each observation starts in its cluster and pairs of the cluster are merged as they move up the hierarchy.<br></p>
+                    <p><em>(Generally, Agglomerative is used more as compared to Divisive among Data Scientists)&nbsp;</em><br></p>
+                    <h3>Example</h3>
+                    <p><em>An International team of scientists led by UCLA biologists used a dendrogram to report genetic data from more than 900 dogs from 85 breeds and more than 200 wild grey wolves worldwide. They used this diagram to see the similarity in genetic data of these animals.</em><br></p>
+                    <img
+                        class="img-fluid" src="assets/img/dendro.jpg">
+                        <h2 class="section-heading">Algorithm</h2>
+                        <p>The Algorithm for Hierarchical Clustering is as follow :<br></p>
+                        <ul>
+                            <li>Create n Clusters for each data point.<br></li>
+                            <li>Compute the Proximity matrix.<br></li>
+                            <li>Repeat -<br>
+                                <ul>
+                                    <li>Merge the two closest cluster.<br></li>
+                                    <li>Update the proximity matrix<br></li>
+                                </ul>
+                            </li>
+                            <li>Until only a single cluster remains.<br></li>
+                        </ul>
+                        <p>Now you must be wondering&nbsp;<strong>what is proximity matrix</strong>??<br></p>
+                        <p>Proximity matrix is simply an NxN dimensional matrix. Here n is the number of the training example. The matrix contains the distance between two nearest clusters.<br></p>
+                        <h2 class="section-heading"><strong>Computing Proximity matrix and Distance between 2 clusters</strong><br></h2>
+                        <p>There are 4 ways of computing distance between the clusters -&nbsp;<br></p>
+                        <ul>
+                            <li>Single - Linkage Clustering<br>
+                                <ul>
+                                    <li>The minimum distance between clusters<br></li>
+                                </ul>
+                            </li>
+                            <li>Complete - Linkage Clustering<br>
+                                <ul>
+                                    <li>The maximum distance between clusters<br></li>
+                                </ul>
+                            </li>
+                            <li>Average - Linkage Clustering<br>
+                                <ul>
+                                    <li>The average distance between clusters<br></li>
+                                </ul>
+                            </li>
+                            <li>Centroid - Linkage Clustering<br>
+                                <ul>
+                                    <li>Distance between cluster centroids<br></li>
+                                </ul>
+                            </li>
+                        </ul><img src="assets/img/Screenshot%20(7).png">
+                        <h3 style="margin-top: 50px;">Advantages and Disadvantages of Hierarchical Clustering<br></h3><img class="img-fluid" src="assets/img/Screenshot%20(8).png">
+                        <h3 style="margin-top: 50px;">K - Means V/S Hierarchical Clustering Algorithm<br></h3><img class="img-fluid" src="assets/img/Screenshot%20(9).png">
+                        <p>Thanks for reading the blog. Next post will be on its implementation. So make sure to check it out.<br></p>
+                </div>
+            </div>
+        </div>
+    </article>
+    <div class="footer-basic">
+        <footer>
+            <div class="social" style="font-size: 20px;"><a href="https://github.com/chandbud5" target="_blank"><i class="fa fa-github"></i></a><a target="_blank" href="https://www.linkedin.com/in/chandbud5/"><i class="fa fa-linkedin-square"></i></a><a href="https://www.instagram.com/chandbud5/"
+                    target="_blank"><i class="fa fa-instagram" style="font-size: 24px;"></i></a></div>
+            <p class="copyright" style="font-size: 16px;margin-bottom: -50px;">Technical Blogger © 2020</p>
+        </footer>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="assets/js/clean-blog.js"></script>
+</body>
+
+</html>
